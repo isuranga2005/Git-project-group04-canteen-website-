@@ -1,18 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu | Science Canteen - University of Ruhuna</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Menu</h1>
-    <ul>
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
 
-    </ul>
-    <h2>Submenu</h2>
+  <div class="top-strip">Faculty of Science, University of Ruhuna, Matara</div>
+
+  <header>
+    <a href="index.html" class="brand">
+      <div class="brand-icon">🍽️</div>
+      <div class="brand-text">
+        <strong>Science Canteen</strong>
+        <span>University of Ruhuna</span>
+      </div>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="menu.html" class="active">Menu</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="page-banner">
+    <h1>Food Menu and Prices</h1>
+    <p>All prices are in Sri Lankan Rupees (Rs.)</p>
+  </section>
+
+  <main class="container">
+
+    <div class="menu-nav">
+      <a href="#breakfast">🌅 Breakfast</a>
+      <a href="#lunch">🍛 Lunch</a>
+      <a href="#snacks">🥟 Short Eats</a>
+      <a href="#drinks">🥤 Beverages</a>
+    </div>
+
+    <div class="menu-group" id="breakfast">
+      <h2>🌅 Breakfast</h2>
+      <table>
+        <thead><tr><th>Item</th><th>Description</th><th>Price</th></tr></thead>
+        <tbody>
+          <tr><td>String Hoppers <span class="tag tag-veg">VEG</span></td><td>Served with dhal and sambol</td><td>Rs. 150</td></tr>
+          <tr><td>Rice and Curry <span class="tag tag-veg">VEG</span></td><td>With coconut sambol and salmon Fish</td><td>Rs. 100</td></tr>
+          <tr><td>Egg Fried Rice (2 pcs) <span class="tag tag-non">NON-VEG</span></td><td>With dhal</td><td>Rs. 150</td></tr>
+          <tr><td>Bread and Omelette <span class="tag tag-non">NON-VEG</span></td><td>Toasted bread with egg omelette</td><td>Rs. 150</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="menu-group" id="lunch">
+      <h2>🍛 Lunch</h2>
+      <table>
+        <thead><tr><th>Item</th><th>Description</th><th>Price</th></tr></thead>
+        <tbody>
+          <tr><td>Rice and Curry (Vegetable) <span class="tag tag-veg">VEG</span></td><td>Rice, three vegetable curries and dhal</td><td>Rs. 140</td></tr>
+          <tr><td>Rice and Curry (Egg) <span class="tag tag-non">NON-VEG</span></td><td>Rice, egg curry and vegetables</td><td>Rs. 150</td></tr>
+          <tr><td>Rice and Curry (Fish) <span class="tag tag-non">NON-VEG</span></td><td>Rice, fish curry and vegetables</td><td>Rs. 140</td></tr>
+          <tr><td>Rice and Curry (Chicken) <span class="tag tag-non">NON-VEG</span></td><td>Rice, chicken curry and vegetables</td><td>Rs. 250</td></tr>
+          <tr><td>Fried Rice <span class="tag tag-non">NON-VEG</span></td><td>Egg or chicken fried rice</td><td>Rs. 260</td></tr>
+          <tr><td>Kottu Roti <span class="tag tag-non">NON-VEG</span></td><td>Vegetable, egg or chicken</td><td>Rs. 260</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="menu-group" id="snacks">
+      <h2>🥟 Short Eats</h2>
+      <table>
+        <thead><tr><th>Item</th><th>Description</th><th>Price</th></tr></thead>
+        <tbody>
+          <tr><td>Fish Bun <span class="tag tag-non">NON-VEG</span></td><td>Soft bun with spicy fish filling</td><td>Rs. 60</td></tr>
+          <tr><td>Vegetable Roll <span class="tag tag-veg">VEG</span></td><td>Crispy roll with vegetable filling</td><td>Rs. 60</td></tr>
+          <tr><td>Egg Roll <span class="tag tag-non">NON-VEG</span></td><td>Crispy roll with egg filling</td><td>Rs. 60</td></tr>
+          <tr><td>Fish Patty <span class="tag tag-non">NON-VEG</span></td><td>Fried pastry with fish filling</td><td>Rs. 60</td></tr>
+          <tr><td>Sandwich <span class="tag tag-non">NON-VEG</span></td><td>Egg or chicken sandwich</td><td>Rs. 60</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="menu-group" id="drinks">
+      <h2>🥤 Beverages</h2>
+      <table>
+        <thead><tr><th>Item</th><th>Description</th><th>Price</th></tr></thead>
+        <tbody>
+          <tr><td>Plain Tea</td><td>Hot Ceylon tea</td><td>Rs. 40</td></tr>
+          <tr><td>Milk Tea</td><td>Tea with fresh milk</td><td>Rs. 100</td></tr>
+          <tr><td>Nescafe</td><td>Nescafe</td><td>Rs. 100</td></tr>
+          <tr><td>Fresh Fruit Juice</td><td>Seasonal fruit</td><td>Rs. 150</td></tr>
+          <tr><td>Milk Packet</td><td>Chilled or normal</td><td>Rs. 100</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="note"><strong>Note:</strong> Prices and available items may change daily. Please check with the counter for today's specials.</p>
+
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <h4>Science Canteen</h4>
+        <p>Serving the Faculty of Science community at the University of Ruhuna.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Visit Us</h4>
+        <p>Faculty of Science<br>University of Ruhuna<br>Matara, Sri Lanka</p>
+      </div>
+    </div>
+    <div class="copyright">&copy; 2026 Science Canteen, University of Ruhuna | CSC1153 Group 04 Project</div>
+  </footer>
+
 </body>
 </html>
