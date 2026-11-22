@@ -464,6 +464,57 @@ tbody tr:nth-child(even) {
   font-size: 0.92rem;
 }
 
+/* ===== Contact form ===== */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 26px;
+  align-items: start;
+}
+
+form {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 28px;
+}
+
+form h2 {
+  color: rgb(95, 10, 12);
+  margin-bottom: 6px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin: 14px 0 6px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 11px 12px;
+  border: 1.5px solid #c9d2cb;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 1rem;
+  background: #fcfdfc;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: rgba(245, 187, 29, 1);
+  box-shadow: 0 0 0 3px rgba(31, 122, 69, 0.2);
+}
+
+form .btn {
+  margin-top: 20px;
+  width: 100%;
+}
+
 /* ===== Footer ===== */
 footer {
   background: rgb(95, 10, 12);
