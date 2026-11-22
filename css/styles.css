@@ -376,6 +376,94 @@ nav a.active {
   border-bottom: none;
 }
 
+/* ===== Menu tables ===== */
+.menu-nav {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+
+.menu-nav a {
+  text-decoration: none;
+  background: rgba(245, 187, 29, .5);
+  color: rgb(95, 10, 12);
+  font-weight: 600;
+  padding: 8px 18px;
+  border-radius: 20px;
+  transition: background 0.3s;
+}
+
+.menu-nav a:hover {
+  background:rgba(245, 187, 29, .8);
+}
+
+.menu-group {
+  margin-bottom: 36px;
+}
+
+.menu-group h2 {
+  color: rgb(95, 10, 12);
+  margin-bottom: 12px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--white);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+th,
+td {
+  padding: 13px 16px;
+  text-align: left;
+}
+
+th {
+  background: rgb(95, 10, 12);
+  color: var(--white);
+}
+
+td:last-child,
+th:last-child {
+  text-align: right;
+  white-space: nowrap;
+}
+
+tbody tr:nth-child(even) {
+  background: #f1f7f2;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 10px;
+  margin-left: 6px;
+}
+
+.tag-veg {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.tag-non {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.note {
+  background: var(--amber-light);
+  border-left: 5px solid var(--amber);
+  padding: 14px 18px;
+  border-radius: 8px;
+  font-size: 0.92rem;
+}
+
 /* ===== Footer ===== */
 footer {
   background: rgb(95, 10, 12);
