@@ -155,6 +155,62 @@ nav a.active {
   font-size: 1.1rem;
   color: #e3f6ea;
 }
+
+/* ===== Layout ===== */
+.page-banner-menu {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/menu.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--white);
+  padding: 44px 24px;
+  text-align: center;
+}
+.page-banner-about {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/canteen2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--white);
+  padding: 44px 24px;
+  text-align: center;
+}
+.page-banner-contact {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/telephone.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--white);
+  padding: 44px 24px;
+  text-align: center;
+}
+
+.page-banner h1 {
+  font-size: 2.2rem;
+}
+
+.page-banner p {
+  color: #cdeed9;
+  margin-top: 6px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 44px 22px;
+}
+
+.section-title {
+  color: rgb(95, 10, 12);
+  font-size: 1.7rem;
+  margin-bottom: 8px;
+}
+
+.section-sub {
+  color: rgba(95, 10, 12, .8);
+  margin-bottom: 26px;
+}
+
 /* ===== Quick facts strip ===== */
 .facts {
   display: grid;
@@ -191,6 +247,58 @@ nav a.active {
 .fact p {
   font-size: 0.9rem;
   color: var(--muted);
+}
+
+/* ===== Cards ===== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  transition: transform 0.25s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img {
+  height: 140px;
+  display: grid;
+  place-items: center;
+  font-size: 3.8rem;
+  background: linear-gradient(135deg, var(--amber-light), #fde68a);
+}
+
+.card-body {
+  padding: 18px 20px 22px;
+}
+
+.card-body h3 {
+  color: rgb(95, 10, 12);
+  margin-bottom: 4px;
+}
+
+.card-body p {
+  font-size: 0.93rem;
+  color: rgb(95, 10, 12);
+}
+
+.price {
+  display: inline-block;
+  margin-top: 10px;
+  background: rgb(122, 21, 18);
+  color: var(--white);
+  font-weight: 700;
+  padding: 3px 14px;
+  border-radius: 20px;
+  font-size: 0.9rem;
 }
 /* ===== Footer ===== */
 footer {
